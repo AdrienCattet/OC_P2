@@ -72,14 +72,12 @@ header{
     display: flex;
 }
 
-.li_navigation a{
+#ul_navigation a{
     display: block;
-    padding: 20px;
-}
-
-#a_activites{
-    padding-left: 36px;
-    padding-right: 36px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 120px;
 }
 
 #ul_navigation a:hover{
@@ -123,8 +121,7 @@ header{
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    outline: 1px solid #0065FC;
-    padding: 10px;
+    padding: 12px;
 }
 
 #button_mobile{
@@ -160,39 +157,14 @@ header{
 }
 
 .li_filtres_recherche i{
-    display: block;
     background-color: #DEEBFF;
     outline: 2px solid #DEEBFF;
+    text-align: center;
     border-radius: 18px;
+    padding-top: 10.51665px;
+    padding-bottom: 10.51665px;
     margin-right: 10px;
-}
-
-#filtre_economique{
-    padding-top: 10.51665px;
-    padding-bottom: 10.51665px;
-    padding-left: 8.775px;
-    padding-right: 8.775px;
-}
-
-#filtre_familial{
-    padding-top: 10.51665px;
-    padding-bottom: 10.51665px;
-    padding-left: 12.2665px;
-    padding-right: 12.2665px;
-}
-
-#filtre_romantique{
-    padding-top: 10.51665px;
-    padding-bottom: 10.51665px;
-    padding-left: 10.51665px;
-    padding-right: 10.51665px;
-}
-
-#filtre_animaux{
-    padding-top: 10.51665px;
-    padding-bottom: 10.51665px;
-    padding-left: 9.6417px;
-    padding-right: 9.6417px;
+    width: 35px;
 }
 
 #informations_complementaires i{
@@ -417,8 +389,17 @@ footer{
         margin-top: 20px;
     }
 
+    nav{
+        width: 100%;
+    }
+
+    .li_navigation{
+        width: 50%;
+    }
+
     #ul_navigation a{
         border-bottom: 3px solid #F2F2F2;
+        width: 100%;
     }
 
     #ul_navigation a:hover{
@@ -429,6 +410,11 @@ footer{
     #formulaire_recherche{
         margin-top: 20px;
         margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #ville{
+        width: 75%;
     }
 
     #submit{
@@ -438,13 +424,12 @@ footer{
     #button_mobile{
         display: unset;
         background-color: #0065FC;
+        text-align: center;
         border: none;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        outline: 1px solid #0065FC;
-        padding: 11px;
-        padding-left: 13.2px;
-        padding-right: 13.2px;
+        padding: 12px;
+        width: 25%;
     }
 
     #button_mobile i{
@@ -526,11 +511,11 @@ footer{
 
     footer{
         flex-flow: column;
-        align-items: flex-start;
+        align-items: unset;
     }
 
     .footer{
-    margin-left: 15px;
+    margin-left: 20px;
     }
 
 }
